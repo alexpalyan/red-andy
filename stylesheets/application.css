@@ -25,7 +25,7 @@ body {
 }
 #top-menu {
     margin-bottom: -2px;
-    background-color: #000; /* #536a3f; */
+    background-color: #000;
     font-size: 8pt;
 }
 #top-menu a {
@@ -57,7 +57,7 @@ body {
     color: #fff;
 }
 #header a {
-    color: #8f969d; /* should anchor be of this color */
+    color: #8f969d;
 }
 #header h1 a {
     color: #fff;
@@ -173,7 +173,7 @@ table.list thead th {
     background-color: #536A3F;
     color: #fff;
 }
-table.list thead th a { /* a:link, a:visited */
+table.list thead th a {
     color: #fff;
 }
 table.list tbody tr:hover {
@@ -181,12 +181,14 @@ table.list tbody tr:hover {
 }
 table.progress {
     border-color: #606060 #d2d2d2 #d2d2d2 #606060;
-    background-color: #fff;
     -moz-box-shadow: 1px 2px 2px #b4b4b4;
     box-shadow: 1px 2px 2px #b4b4b4;
 }
 table.progress td {
     height: 0.5em;
+}
+table.progress td.todo {
+    background-color: #fff;
 }
 table.progress td.closed {
     background-color: #7ca858;
@@ -220,21 +222,43 @@ pre, code {
     font-family: Terminus, Courier New;
     font-size: 9pt;
 }
-pre {
-    padding: 0.25em;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -moz-box-shadow: 1px 2px 2px #b4b4b4;
-    box-shadow: 1px 2px 2px #b4b4b4;
-}
 div.wiki pre {
     padding: 3px;
     line-height: 15px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: 1px 2px 2px #b4b4b4;
+    box-shadow: 1px 2px 2px #b4b4b4;
     background-color: #F3F3F3;
     background-image: url(../images/code-background.png);
     background-position: left 3px;
     border-color: #b4b4b4;
     white-space: pre-wrap;
+}
+table.filecontent {
+    border-collapse: separate !important;
+    border-spacing: 0;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    /* box-shadow: 1px 2px 2px #b4b4b4; */
+    background-color: #F3F3F3 !important;
+    background-image: url(../images/code-background.png);
+    border-color: #b4b4b4;
+}
+table.filecontent th, table.filecontent td {
+    padding: 0;
+}
+table.filecontent th.line-num {
+    line-height: 15px;
+    font-family: Terminus, Courier New;
+    font-size: 9pt !important;
+    border: none !important;
+    background-color: #536A3F;
+    color: #fff !important;
+}
+table.filecontent td.line-code pre {
+    margin-left: 2px !important;
+    line-height: 15px;
 }
 .syntaxhl .no {
     background-color: #536A3F !important;
@@ -259,9 +283,6 @@ tr.context-menu-selection, tr.context-menu-selection:hover {
 }
 .summary {
     font-style: normal;
-}
-.author {
-    font-style: italic;
 }
 .controller-wiki .wiki {
     font-family: Georgia, Arial;
@@ -359,7 +380,7 @@ h2, h3, .wiki h1, .wiki h2 {
 .wiki h5 {
     color: #cf973d;
 }
-input, select, textarea {
+input[type="text"], input[type="password"], select, textarea {
     border-top: 1px solid #606060;
     border-left: 1px solid #606060;
     border-right: 1px solid #d2d2d2;
@@ -370,6 +391,7 @@ input, select, textarea {
     background-color: #fff;
 }
 input.button-small, input[type="submit"], input[type="button"] {
+    border-width: 1px;
     border-radius: 6px;
     -moz-border-radius: 6px;
     background-color: #536a3f;
