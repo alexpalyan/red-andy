@@ -245,10 +245,20 @@ table.filecontent {
     background-image: url(../images/code-background.png);
     border-color: #b4b4b4;
 }
+table.filecontent th.filename {
+    padding: 0 !important;
+    line-height: 15px;
+    font-family: Terminus, Courier New;
+    font-size: 9pt !important;
+    text-align: center !important;
+    border: none;
+    background-color: #536A3F !important;
+    color: #fff;
+}
 table.filecontent th, table.filecontent td {
     padding: 0;
 }
-table.filecontent th.line-num {
+table.filecontent th.line-num, table.filecontent th.filename {
     line-height: 15px;
     font-family: Terminus, Courier New;
     font-size: 9pt !important;
