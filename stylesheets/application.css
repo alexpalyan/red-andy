@@ -239,6 +239,24 @@ pre code {
     box-shadow: none;
     border: none;
 }
+blockquote {
+    font-style: normal;
+    border: 1px solid #b4b4b4;
+    background-color: #f3f3f3;
+    background-color: rgba(243,243,243,0.5);
+    background-image: url(../images/quote.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -moz-box-shadow: 1px 2px 2px #b4b4b4;
+    box-shadow: 1px 2px 2px #b4b4b4;
+    margin-left: 2em;
+    padding-right: 24px;
+}
+blockquote blockquote {
+    margin-right: 0;
+}
 div.wiki pre {
     padding: 3px;
     line-height: 15px;
@@ -344,6 +362,9 @@ div.wiki ul.toc a {
 }
 .controller-wiki div.wiki ul.toc li {
     margin: 0;
+}
+div.wiki ul.toc ul {
+    padding-left: 0.75em;
 }
 div.wiki ul.toc li li {
     margin-left: 1em;
