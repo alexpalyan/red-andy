@@ -243,6 +243,7 @@ pre code {
     -moz-box-shadow: none;
     box-shadow: none;
     border: none;
+    line-height: 15px;
 }
 blockquote {
     font-style: normal;
