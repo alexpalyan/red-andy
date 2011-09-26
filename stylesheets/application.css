@@ -139,7 +139,7 @@ fieldset {
     background-repeat: repeat-x;
     border: 1px solid #E4C742;
 }
-#sidebar h3, #issue-changesets h3 {
+#sidebar h3, div#issue-changesets h3 {
     padding: 4px 6px;
     border-bottom: none;
     border-top-left-radius: 4px;
@@ -154,17 +154,17 @@ fieldset {
 #sidebar h3:first-child {
     margin-top: 0;
 }
-#issue-changesets h3 {
+div#issue-changesets h3 {
     margin: 0;
 }
-#issue-changesets .changeset {
+div#issue-changesets .changeset {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
 }
-#issue-changesets p {
+div#issue-changesets p {
     margin-bottom: 0.5em;
 }
-#issue-changesets .changeset-changes {
+div#issue-changesets .changeset-changes {
     border-top: 1px dotted #cf973d;
     padding-top: 0.75em;
 }
