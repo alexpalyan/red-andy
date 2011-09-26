@@ -378,6 +378,12 @@ div.wiki ul.toc li li {
 div.wiki ul.toc li li li {
     font-size: inherit;
 }
+div.wiki ul.toc li.heading2 {
+    margin-left: 1em;
+}
+div.wiki ul.toc li.heading3 {
+    margin-left: 2em;
+}
 ul.projects {
     padding-left: 2em;
 }
