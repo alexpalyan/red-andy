@@ -384,6 +384,9 @@ div.wiki ul.toc li.heading2 {
 div.wiki ul.toc li.heading3 {
     margin-left: 2em;
 }
+div.wiki ul.toc li.heading4, div.wiki ul.toc li.heading5, div.wiki ul.toc li.heading6 {
+    margin-left: 3em;
+}
 ul.projects {
     padding-left: 2em;
 }
