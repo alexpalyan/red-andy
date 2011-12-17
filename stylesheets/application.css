@@ -340,6 +340,11 @@ hr {
     /* background-repeat: repeat-x; */
     border: 1px solid #E4C742;
 }
+form em {
+    font-style: normal;
+    font-size: 90%;
+    color: #888;
+}
 .odd {
     background-color: #f3f3f3;
 }
