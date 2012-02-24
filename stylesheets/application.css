@@ -151,7 +151,7 @@ fieldset {
     background-repeat: repeat-x;
     color: #bff196;
 }
-#sidebar h3:first-child {
+#sidebar > h3:first-child {
     margin-top: 0;
 }
 div#issue-changesets h3 {
