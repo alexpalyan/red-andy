@@ -506,3 +506,6 @@ input[type="submit"] {
 .jstElements button:active {
     border-color: #606060 #d2d2d2 #d2d2d2 #606060 !important;
 }
+.theme-Red-andy #sidebar iframe.follow-button:first-child {
+    margin-top: 0.3em;
+}
