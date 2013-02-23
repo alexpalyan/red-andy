@@ -354,7 +354,7 @@ tr.context-menu-selection, tr.context-menu-selection:hover {
 .summary {
     font-style: normal;
 }
-.controller-wiki .wiki {
+.controller-wiki #content .wiki {
     font-family: Georgia, Arial;
     font-size: 10pt;
 }
