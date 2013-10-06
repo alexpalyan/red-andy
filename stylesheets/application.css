@@ -154,6 +154,12 @@ fieldset {
 #sidebar > h3:first-child {
     margin-top: 0;
 }
+#sidebar a.selected {
+    background-color: #536a3f;
+}
+#sidebar .wiki-anchor {
+    visibility: hidden;
+}
 div#issue-changesets h3 {
     margin: 0;
 }
@@ -198,6 +204,8 @@ table.list tbody tr:hover {
     background-color: #FDF7BB;
 }
 table.progress {
+    border-width: 1px;
+    border-style: solid;
     border-color: #606060 #d2d2d2 #d2d2d2 #606060;
     -moz-box-shadow: 1px 2px 2px #b4b4b4;
     box-shadow: 1px 2px 2px #b4b4b4;
@@ -497,6 +505,11 @@ input.button-small, input[type="button"] {
 input[type="submit"] {
     padding: 4px 12px;
 }
+input[type="submit"][disabled="disabled"], button[disabled="disabled"] {
+    background-color: #5e5e5e;
+    background-image: url(../images/menu-disabled.png);
+    border-color: #bababa #4b4b4b #4b4b4b #bababa;
+}
 .jstElements button {
     margin-right: 1px !important;
     border-radius: 3px;
@@ -506,6 +519,18 @@ input[type="submit"] {
 .jstElements button:active {
     border-color: #606060 #d2d2d2 #d2d2d2 #606060 !important;
 }
-.theme-Red-andy #sidebar iframe.follow-button:first-child {
+#sidebar iframe.follow-button:first-child {
     margin-top: 0.3em;
+}
+.controller-news.action-index #content > h3 {
+    color: #2a5685;
+    border-bottom: 1px solid #2a5685;
+}
+.controller-news.action-index #content > div.wiki {
+    margin-bottom: 2em;
+}
+.controller-news.action-index #content > h3 a,
+.controller-news.action-index #content > h3 a:link,
+.controller-news.action-index #content > h3 a:visited {
+    color: #2a5685;
 }
