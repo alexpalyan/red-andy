@@ -429,6 +429,11 @@ ul.projects div.child a.project {
     font-weight: bold;
     font-size: 10pt;
 }
+ul.projects div.description a.project {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+}
 a, a:link, a:visited {
     color: #c07600;
 }
