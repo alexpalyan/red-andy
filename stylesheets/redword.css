@@ -1,0 +1,20 @@
+#wpadminbar img.gravatar {
+    box-shadow: none;
+}
+#header {
+    background-color: #464646;
+    background-image: url(../images/wordpress-background.png);
+    padding-bottom: 0;
+}
+body.action-index h3.post-title {
+    color: #2a5685;
+    border-bottom: 1px solid #2a5685;
+}
+body.action-index div.post-content {
+    margin-bottom: 2em;
+}
+body.action-index h3.post-title a,
+body.action-index h3.post-title a:link,
+body.action-index h3.post-title a:visited {
+    color: #2a5685;
+}

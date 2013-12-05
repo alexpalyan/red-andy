@@ -1,4 +1,5 @@
 @import url(../../../stylesheets/application.css);
+@import url(mobile.css) (max-width: 600px); /* FIXME max-device-width */
 
 body {
     background-color: #f0f0f0;
@@ -56,6 +57,7 @@ body {
 #header h1 {
     font-family: Georgia, Arial;
     font-weight: normal;
+    font-size: 18pt;
     color: #fff;
     float: none;
     overflow: hidden;
@@ -362,12 +364,18 @@ tr.context-menu-selection, tr.context-menu-selection:hover {
 .summary {
     font-style: normal;
 }
-.controller-wiki #content .wiki {
+.controller-wiki #content .wiki, .controller-news #content .wiki {
     font-family: Georgia, Arial;
     font-size: 10pt;
 }
-.controller-wiki .wiki h1, .controller-wiki .wiki h2, .controller-wiki .wiki h3, .controller-wiki .wiki h4, .controller-wiki .wiki h5 {
+.controller-wiki .wiki h1, .controller-wiki .wiki h2, .controller-wiki .wiki h3, .controller-wiki .wiki h4, .controller-wiki .wiki h5,
+.controller-news .wiki h1, .controller-news .wiki h2, .controller-news .wiki h3, .controller-news .wiki h4, .controller-news .wiki h5 {
     font-family: Georgia, Arial;
+}
+#content > h2 {
+    font-family: Georgia, Arial;
+    font-weight: normal;
+    font-size: 18pt;
 }
 .journal-link {
     font-weight: normal;
@@ -528,14 +536,47 @@ input[type="submit"][disabled="disabled"], button[disabled="disabled"] {
     margin-top: 0.3em;
 }
 .controller-news.action-index #content > h3 {
-    color: #2a5685;
-    border-bottom: 1px solid #2a5685;
+    font-family: Georgia, Arial;
+    font-weight: normal;
+}
+.controller-news.action-index #content > h3 a {
+    font-size: 160%;
 }
 .controller-news.action-index #content > div.wiki {
     margin-bottom: 2em;
 }
-.controller-news.action-index #content > h3 a,
-.controller-news.action-index #content > h3 a:link,
-.controller-news.action-index #content > h3 a:visited {
-    color: #2a5685;
+.contextual {
+    margin-top: 10px;
+}
+.controller-news.action-index p.author,
+.controller-news.action-show #content > p:first-of-type {
+    font-style: italic;
+    font-size: 0.9em;
+}
+.controller-news.action-show #content > p:first-of-type em {
+    color: #777;
+}
+.controller-news .wiki h1, .controller-news .wiki h2, .controller-news .wiki h3, .controller-news .wiki h4, .controller-news .wiki h5, .controller-news .wiki h6 {
+    color: #444;
+    border-bottom: none;
+    font-weight: normal;
+}
+.controller-news .wiki h1 {
+    font-size: 17pt;
+}
+.controller-news .wiki h2 {
+    font-size: 16pt;
+}
+.controller-news .wiki h3 {
+    font-size: 15pt;
+}
+.controller-news .wiki h4 {
+    font-size: 14pt;
+}
+.controller-news .wiki h5 {
+    font-size: 13pt;
+}
+.controller-news .wiki h6 {
+    color: inherit;
+    font-size: 12pt;
 }

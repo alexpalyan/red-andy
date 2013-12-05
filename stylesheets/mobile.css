@@ -1,0 +1,38 @@
+body {
+    min-width: inherit;
+}
+#wrapper {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    background-image: none !important;
+}
+#wrapper2 {
+    padding-right: 0 !important;
+    background-image: none !important;
+}
+#top-menu {
+    overflow: hidden; /* FIXME temp. */
+}
+#header {
+    overflow: hidden;
+}
+#quick-search {
+    float: none;
+}
+#main-menu {
+    position: static;
+    clear: both;
+}
+#sidebar {
+    float: none;
+    width: auto;
+    margin-left: 7px;
+}
+#content {
+    width: auto !important;
+}
+.splitcontentleft,
+.splitcontentright {
+    float: none;
+    width: auto;
+}
