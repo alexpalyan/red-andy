@@ -23,6 +23,9 @@ body {
     position: static;
     clear: both;
 }
+#main-menu ul {
+    width: 2000px;
+}
 #sidebar {
     float: none;
     width: auto;
@@ -35,4 +38,17 @@ body {
 .splitcontentright {
     float: none;
     width: auto;
+}
+.tabular p {
+    padding-left: 0;
+}
+.tabular label {
+    float: none;
+    width: auto;
+    margin-left: 0;
+    display: block;
+    text-align: left;
+}
+.tabular label:after {
+    content: ':';
 }

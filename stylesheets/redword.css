@@ -7,14 +7,67 @@
     padding-bottom: 0;
 }
 body.action-index h3.post-title {
-    color: #2a5685;
-    border-bottom: 1px solid #2a5685;
+    font-family: Georgia, Arial;
+    font-weight: normal;
+    margin-bottom: 0;
 }
-body.action-index div.post-content {
-    margin-bottom: 2em;
+body.action-index h3.post-title a {
+    font-size: 160%;
 }
-body.action-index h3.post-title a,
-body.action-index h3.post-title a:link,
-body.action-index h3.post-title a:visited {
-    color: #2a5685;
+article header.post-header h2.post-title {
+    font-family: Georgia, Arial;
+    font-weight: normal;
+    font-size: 18pt;
+    margin-bottom: 0;
+}
+article header.post-header > p {
+    margin-top: 5px;
+}
+article header.post-header .author {
+    font-style: italic;
+    font-size: 0.9em;
+}
+article .wiki.post-content h1,
+article .wiki.post-content h2,
+article .wiki.post-content h3,
+article .wiki.post-content h4,
+article .wiki.post-content h5,
+article .wiki.post-content h6 {
+    color: #444;
+    border-bottom: none;
+    font-weight: normal;
+}
+article .wiki.post-content h1 {
+    font-size: 17pt;
+}
+article .wiki.post-content h2 {
+    font-size: 16pt;
+}
+article .wiki.post-content h3 {
+    font-size: 15pt;
+}
+article .wiki.post-content h4 {
+    font-size: 14pt;
+}
+article .wiki.post-content h5 {
+    font-size: 13pt;
+}
+article .wiki.post-content h6 {
+    color: inherit;
+    font-size: 12pt;
+}
+.single-post .contextual {
+    margin-top: 5px;
+}
+#top-menu ul.menu span.moderated-comments-count {
+    color: #000;
+    background-color: #c07600;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    padding: 0px 2px;
+    margin-left: 2px;
+}
+#top-menu ul.menu span.moderated-comments-count:before,
+#top-menu ul.menu span.moderated-comments-count:after {
+    content: '';
 }

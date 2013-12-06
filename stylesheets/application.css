@@ -156,6 +156,10 @@ fieldset {
 #sidebar > h3:first-child {
     margin-top: 0;
 }
+#sidebar > div:first-child > h3:first-child,
+#sidebar > form:first-child > h3:first-child {
+    margin-top: 0;
+}
 #sidebar a.selected {
     background-color: #536a3f;
 }
@@ -548,6 +552,9 @@ input[type="submit"][disabled="disabled"], button[disabled="disabled"] {
 .contextual {
     margin-top: 10px;
 }
+#sidebar .contextual {
+    margin-top: 5px;
+}
 .controller-news.action-index p.author,
 .controller-news.action-show #content > p:first-of-type {
     font-style: italic;
@@ -579,4 +586,7 @@ input[type="submit"][disabled="disabled"], button[disabled="disabled"] {
 .controller-news .wiki h6 {
     color: inherit;
     font-size: 12pt;
+}
+#main-menu div.tabs-buttons {
+    background: transparent;
 }
