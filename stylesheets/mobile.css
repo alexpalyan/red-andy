@@ -52,3 +52,6 @@ body {
 .tabular label:after {
     content: ':';
 }
+ul {
+    padding-left: 25px;
+}
