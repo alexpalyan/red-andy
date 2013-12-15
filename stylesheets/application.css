@@ -6,7 +6,7 @@ body {
     font-family: Tahoma, Verdana;
     color: #001220;
 }
-html, body, #wrapper, #wrapper2 {
+html, body {
     height: 100%;
 }
 #wrapper {
@@ -23,7 +23,7 @@ html, body, #wrapper, #wrapper2 {
     background-position: right top;
     background-repeat: repeat-y;
 }
-#wrapper3 {
+#wrapper, #wrapper2, #wrapper3 {
     min-height: 100%;
 }
 #top-menu, #header, #footer {
