@@ -6,6 +6,9 @@ body {
     font-family: Tahoma, Verdana;
     color: #001220;
 }
+html, body, #wrapper, #wrapper2 {
+    height: 100%;
+}
 #wrapper {
     margin: 0 20px;
     padding-left: 7px;
@@ -19,6 +22,9 @@ body {
     background-image: url(../images/page-right.png);
     background-position: right top;
     background-repeat: repeat-y;
+}
+#wrapper3 {
+    min-height: 100%;
 }
 #top-menu, #header, #footer {
     margin: 0 7px;
@@ -153,11 +159,9 @@ fieldset {
     background-repeat: repeat-x;
     color: #bff196;
 }
-#sidebar > h3:first-child {
-    margin-top: 0;
-}
-#sidebar > div:first-child > h3:first-child,
-#sidebar > form:first-child > h3:first-child {
+#sidebar > h3:first-child,
+#sidebar > *:first-child > h3:first-child,
+#sidebar > *:first-child > .contextual:first-child + h3 {
     margin-top: 0;
 }
 #sidebar a.selected {
@@ -188,6 +192,8 @@ div#issue-changesets .changeset-changes {
     -moz-border-radius-topright: 6px;
     background-image: url(../images/footer-background.png);
     background-repeat: repeat-x;
+    margin-top: -24px;
+    height: 24px;
     color: #8f969d;
 }
 #footer a {
@@ -376,7 +382,8 @@ tr.context-menu-selection, tr.context-menu-selection:hover {
 .controller-news .wiki h1, .controller-news .wiki h2, .controller-news .wiki h3, .controller-news .wiki h4, .controller-news .wiki h5 {
     font-family: Georgia, Arial;
 }
-#content > h2 {
+#content > h2,
+.controller-wiki #content .wiki > h1:first-of-type {
     font-family: Georgia, Arial;
     font-weight: normal;
     font-size: 18pt;
@@ -549,11 +556,8 @@ input[type="submit"][disabled="disabled"], button[disabled="disabled"] {
 .controller-news.action-index #content > div.wiki {
     margin-bottom: 2em;
 }
-.contextual {
+#content > .contextual {
     margin-top: 10px;
-}
-#sidebar .contextual {
-    margin-top: 5px;
 }
 .controller-news.action-index p.author,
 .controller-news.action-show #content > p:first-of-type {
