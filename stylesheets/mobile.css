@@ -11,22 +11,37 @@ body {
     background-image: none !important;
 }
 #top-menu {
-    overflow: hidden; /* FIXME temp. */
-    height: auto; /* FIXME */
+    overflow: hidden;
+    height: auto;
+}
+#top-menu > ul {
+    overflow: hidden;
+    margin: 3px 0 5px 0;
 }
 #account {
-    overflow: hidden; /* FIXME */
-    float: none; /* FIXME */
-    clear: both; /* FIXME */
+    overflow: hidden;
+    float: none;
+    clear: both;
+}
+#account ul {
+    padding-bottom: 3px;
 }
 #top-menu #loggedas {
-    float: none; /* FIXME */
+    text-align: center;
+    float: none;
 }
 #header {
     overflow: hidden;
 }
 #quick-search {
+    margin-bottom: 5px;
     float: none;
+}
+#quick-search input {
+    width: 98%;
+}
+#quick-search select {
+    width: 100%;
 }
 #main-menu {
     position: static;
@@ -54,10 +69,18 @@ html > body #content {
 }
 #login-form table {
     margin-top: 1px;
+    padding: 0.25em;
+}
+#login-form table td {
+    padding: 0;
 }
 #login-form input#username,
 #login-form input#password {
     width: auto;
+}
+input[type="text"],
+input[type="password"] {
+    max-width: 96%
 }
 #footer {
     font-size: 0.8em;
@@ -77,9 +100,13 @@ html > body #content {
     display: block;
     text-align: left;
 }
-.tabular label:after {
-    content: ':';
-}
 ul {
     padding-left: 25px;
+}
+div#activity dl,
+#search-results {
+    margin-left: 0.5em;
+}
+#activity dt img.gravatar {
+    margin: 0 0.5em 0.5em 0;
 }
