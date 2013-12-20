@@ -50,7 +50,7 @@ if (document.observe) {
                 tabsButtons.appendChild(tabRight);
                 mainMenu.appendChild(tabsButtons);
                 if (tabs.length == 0) {
-                    Event.observe(window, 'load', function() { displayTabsButtons(); });
+                    displayTabsButtons();
                     Event.observe(window, 'resize', function() { displayTabsButtons(); });
                 }
             }
@@ -66,4 +66,57 @@ if (document.observe) {
             }
         });
     }
-} // else TODO jQuery $(document).ready() + try for non-mobile as well
+} else if (window.jQuery) {
+    if ($(window).width() <= 600) {
+        var toggleSidebar = function(el) {
+            var sidebar = $('#sidebar');
+            var element = $(el);
+            if (element.hasClass('desc')) {
+                element.removeClass('desc');
+                element.addClass('asc');
+            } else {
+                element.removeClass('asc');
+                element.addClass('desc');
+            }
+            sidebar.children().each(function(index, child) {
+                if (child.id != 'sidebar-toggler') {
+                    $(child).toggle();
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            var mainMenu = $('#main-menu');
+            if (mainMenu) {
+                var tabs = $('div.tabs');
+                mainMenu.addClass('tabs');
+                var tabsButtons = $('<div></div>');
+                tabsButtons.addClass('tabs-buttons');
+                tabsButtons.hide();
+                var tabLeft = $('<button></button>');
+                tabLeft.addClass('tab-left');
+                tabLeft.click(function() { moveTabLeft(this); });
+                tabsButtons.append(tabLeft);
+                var tabRight = $('<button></button>');
+                tabRight.addClass('tab-right');
+                tabRight.click(function() { moveTabRight(this); });
+                tabsButtons.append(tabRight);
+                mainMenu.append(tabsButtons);
+                if (tabs.length == 0) {
+                    displayTabsButtons();
+                    $(window).resize(displayTabsButtons);
+                }
+            }
+            var sidebar = $('#sidebar');
+            if (sidebar) {
+                var sidebarToggler = $('<a></a>');
+                sidebarToggler.attr('id', 'sidebar-toggler');
+                sidebarToggler.addClass('sort');
+                sidebarToggler.addClass('asc');
+                sidebarToggler.click(function() { toggleSidebar(this); });
+                sidebar.append(sidebarToggler);
+                toggleSidebar(sidebarToggler);
+            }
+        });
+    }
+}

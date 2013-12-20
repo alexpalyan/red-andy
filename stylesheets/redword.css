@@ -27,6 +27,10 @@ article header.post-header .author {
     font-style: italic;
     font-size: 0.9em;
 }
+.wiki img.attachment-post-thumbnail {
+    -moz-box-shadow: 1px 1px 2px #b4b4b4;
+    box-shadow: 1px 1px 2px #b4b4b4;
+}
 article .wiki.post-content h1,
 article .wiki.post-content h2,
 article .wiki.post-content h3,
@@ -57,7 +61,7 @@ article .wiki.post-content h6 {
     font-size: 12pt;
 }
 .single-post .contextual {
-    margin-top: 5px;
+    margin-top: 5px !important;
 }
 #top-menu ul.menu span.moderated-comments-count {
     color: #000;
@@ -70,4 +74,12 @@ article .wiki.post-content h6 {
 #top-menu ul.menu span.moderated-comments-count:before,
 #top-menu ul.menu span.moderated-comments-count:after {
     content: '';
+}
+#sidebar ul li {
+    padding-left: 1em;
+}
+#sidebar ul li:before {
+    content: '»';
+    position: absolute;
+    margin-left: -1em;
 }
