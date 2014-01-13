@@ -440,6 +440,9 @@ ul.projects div.child a.project {
     font-weight: bold;
     font-size: 10pt;
 }
+ul.projects div.description {
+    margin-top: 0.5em;
+}
 ul.projects div.description a.project {
     font-family: inherit;
     font-weight: inherit;
