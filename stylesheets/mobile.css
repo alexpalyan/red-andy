@@ -50,6 +50,13 @@ body {
 #main-menu ul {
     width: 2000px;
 }
+#main-menu div.tabs-buttons {
+    border-bottom: none;
+}
+#main-menu div.tabs-buttons button.tab-left,
+#main-menu div.tabs-buttons button.tab-right {
+    bottom: 0px;
+}
 #sidebar {
     float: none;
     width: auto;

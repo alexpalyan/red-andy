@@ -27,9 +27,21 @@ article header.post-header .author {
     font-style: italic;
     font-size: 0.9em;
 }
-.wiki img.attachment-post-thumbnail {
+.wiki img.size-thumbnail,
+.wiki img.attachment-thumbnail,
+.wiki img.attachment-post-thumbnail,
+.wiki div.attachment-post-thumbnail img {
     -moz-box-shadow: 1px 1px 2px #b4b4b4;
     box-shadow: 1px 1px 2px #b4b4b4;
+}
+.gallery img {
+    padding: 2px;
+    border: solid 1px #d5d5d5 !important;
+    background: #fff;
+}
+.gallery img.attachment-thumbnail {
+    -moz-box-shadow: 2px 3px 3px #b4b4b4;
+    box-shadow: 2px 3px 3px #b4b4b4;
 }
 article .wiki.post-content h1,
 article .wiki.post-content h2,
@@ -63,9 +75,12 @@ article .wiki.post-content h6 {
 .single-post .contextual {
     margin-top: 5px !important;
 }
+.single-post .post-header .contextual {
+    margin-top: 10px !important;
+}
 #top-menu ul.menu span.moderated-comments-count {
-    color: #000;
-    background-color: #c07600;
+    color: #fff;
+    background-color: #c61a1a;
     border-radius: 2px;
     -moz-border-radius: 2px;
     padding: 0px 2px;
@@ -82,4 +97,17 @@ article .wiki.post-content h6 {
     content: '»';
     position: absolute;
     margin-left: -1em;
+}
+.wp-caption.box {
+    -moz-box-shadow: 1px 1px 2px #b4b4b4;
+    box-shadow: 1px 1px 2px #b4b4b4;
+    background-color: #f6f6f6;
+    border-color: #e4e4e4;
+    border-radius: 0;
+}
+.wp-caption-text {
+    margin-top: 3px !important;
+}
+#respond div.wiki.help {
+    font-family: Tahoma, Verdana;
 }

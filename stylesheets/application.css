@@ -1,5 +1,5 @@
 @import url(../../../stylesheets/application.css);
-@import url(mobile.css) (max-width: 600px); /* FIXME max-device-width */
+@import url(mobile.css) (max-width: 600px); /* max-device-width */
 
 body {
     background-color: #f0f0f0;
@@ -258,7 +258,6 @@ code {
     border-radius: 2px;
     -moz-box-shadow: 1px 1px 2px #b4b4b4;
     box-shadow: 1px 1px 2px #b4b4b4;
-    background-color: #fff;
     border: 1px solid #b4b4b4;
     line-height: 20px;
 }
