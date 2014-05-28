@@ -456,16 +456,20 @@ a, a:link, a:visited {
 a:hover, .wiki a:hover, a:active, .wiki a:active {
     color: #c61a1a;
 }
-tr.priority-5 a, a.priority-5 {
+tr.priority-highest a, a.priority-highest {
     color: #a80a0a;
 }
-tr.priority-4 a, a.priority-4 {
+tr.priority-high2 a, a.priority-high2,
+tr.priority-high3 a, a.priority-high3,
+tr.priority-high4 a, a.priority-high4 {
     color: #b44005;
 }
-tr.priority-2 a, a.priority-2 {
+tr.priority-low2 a, a.priority-low2,
+tr.priority-low3 a, a.priority-low3,
+tr.priority-low4 a, a.priority-low4 {
     color: #60583b;
 }
-tr.priority-1 a, a.priority-1 {
+tr.priority-lowest a, a.priority-lowest {
     color: #003a77;
 }
 tr.closed a, a.closed {
