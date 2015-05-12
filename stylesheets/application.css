@@ -370,7 +370,7 @@ tr.context-menu-selection, tr.context-menu-selection:hover {
     font-style: normal;
 }
 .controller-wiki #content .wiki, .controller-news #content .wiki {
-    font-family: Georgia, Arial;
+    font-family: 'Noto Sans', 'Titillium Web', Arial, sans-serif;
     font-size: 10pt;
 }
 .controller-wiki .wiki h1, .controller-wiki .wiki h2, .controller-wiki .wiki h3, .controller-wiki .wiki h4, .controller-wiki .wiki h5,
